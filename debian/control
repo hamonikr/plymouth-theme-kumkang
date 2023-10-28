@@ -1,0 +1,15 @@
+Source: plymouth-theme-kumkang
+Section: admin
+Priority: optional
+Maintainer: Kevin Kim <chaeya@gmail.com>
+Standards-Version: 4.1.4
+
+Package: plymouth-theme-kumkang
+Architecture: all
+Depends: plymouth-themes
+Conflicts: 
+Recommends: 
+Replaces: 
+Homepage: https://hamonikr.org
+Description: hamonikr plymouth theme
+  하모니카 plymouth theme
