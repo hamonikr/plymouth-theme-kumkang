@@ -1,6 +1,6 @@
 ## plymouth-theme-kumkang
 
-하모니카 plymouth Theme
+plymouth Theme for kumkang
 
-![screenshot](./screenshot.png)
+![screenshot](./plymouth-kumkang.gif)
 
