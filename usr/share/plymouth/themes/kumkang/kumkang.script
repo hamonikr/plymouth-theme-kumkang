@@ -112,6 +112,6 @@ hamonikr_image = Image("hamonikr-logo.png");
 ubuntu_sprite = Sprite();
 
 ubuntu_sprite.SetImage(hamonikr_image);
-ubuntu_sprite.SetX(Window.GetX() + (Window.GetWidth() / 2 - hamonikr_image.GetWidth() / 2)); # center the image horizontally
-ubuntu_sprite.SetY(Window.GetHeight() - hamonikr_image.GetHeight() - 50); 
 
+ubuntu_sprite.SetX(Window.GetX(0) + (Window.GetWidth(0) / 2 - hamonikr_image.GetWidth() / 2)); # center the image horizontally
+ubuntu_sprite.SetY(Window.GetHeight(0) - hamonikr_image.GetHeight() - 50); 
