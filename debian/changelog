@@ -1,3 +1,9 @@
+plymouth-theme-kumkang (1.1.0) stable; urgency=medium
+
+  * Add bgrt-hamonikr theme
+
+ -- HamoniKR <pkg@hamonikr.org>  Fri, 21 Jun 2024 15:43:07 +0900
+
 plymouth-theme-kumkang (1.0.1) stable; urgency=medium
 
   * Support display logo with dual monitor 
