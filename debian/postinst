@@ -7,18 +7,23 @@ set -e
 case "$1" in
     configure)
 
-	if [ -d /usr/share/plymouth/themes/kumkang ]; then
-        update-alternatives \
-            --install /usr/share/plymouth/themes/default.plymouth default.plymouth \
-            /usr/share/plymouth/themes/kumkang/kumkang.plymouth 500
+        if [ -d /usr/share/plymouth/themes/bgrt-hamonikr ]; then
+            update-alternatives \
+                --install /usr/share/plymouth/themes/default.plymouth default.plymouth \
+                /usr/share/plymouth/themes/bgrt-hamonikr/bgrt-hamonikr.plymouth 400
+        fi
 
-        update-alternatives \
-            --set default.plymouth \
-            /usr/share/plymouth/themes/kumkang/kumkang.plymouth
+        if [ -d /usr/share/plymouth/themes/kumkang ]; then
+            update-alternatives \
+                --install /usr/share/plymouth/themes/default.plymouth default.plymouth \
+                /usr/share/plymouth/themes/kumkang/kumkang.plymouth 500
+
+            update-alternatives \
+                --set default.plymouth \
+                /usr/share/plymouth/themes/kumkang/kumkang.plymouth
+        fi
 
         update-initramfs -u
-    fi
-
     ;;
     abort-upgrade|abort-remove|abort-deconfigure)
 
