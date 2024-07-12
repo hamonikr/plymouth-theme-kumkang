@@ -1,3 +1,10 @@
+plymouth-theme-kumkang (1.1.0+h1) stable; urgency=medium
+
+  * Release for bookworm arm64
+   - Removed unused bgrt-hamonikr
+
+ -- HamoniKR <pkg@hamonikr.org>  Fri, 12 Jul 2024 11:21:33 +0900
+
 plymouth-theme-kumkang (1.1.0) stable; urgency=medium
 
   * Add bgrt-hamonikr theme

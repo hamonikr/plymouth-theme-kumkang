@@ -7,12 +7,6 @@ set -e
 case "$1" in
     configure)
 
-        if [ -d /usr/share/plymouth/themes/bgrt-hamonikr ]; then
-            update-alternatives \
-                --install /usr/share/plymouth/themes/default.plymouth default.plymouth \
-                /usr/share/plymouth/themes/bgrt-hamonikr/bgrt-hamonikr.plymouth 400
-        fi
-
         if [ -d /usr/share/plymouth/themes/kumkang ]; then
             update-alternatives \
                 --install /usr/share/plymouth/themes/default.plymouth default.plymouth \
@@ -21,6 +15,10 @@ case "$1" in
             update-alternatives \
                 --set default.plymouth \
                 /usr/share/plymouth/themes/kumkang/kumkang.plymouth
+
+            if [ -x /usr/sbin/plymouth-set-default-theme ]; then
+                plymouth-set-default-theme kumkang
+            fi                  
         fi
 
         update-initramfs -u
